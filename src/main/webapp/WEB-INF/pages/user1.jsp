@@ -14,19 +14,19 @@
     <tr>
       <td>Login</td>
       <td>
-        <input type="text" name="login" value="" size="20" autocomplete="off">
+        <input type="text" name="login" value="${user.login}" size="20" autocomplete="off">
       </td>
     </tr>
     <tr>
       <td>Password</td>
       <td>
-        <input type="text" name="password" value="" size="20" autocomplete="off">
+        <input type="text" name="password" value="${user.password}" size="20" autocomplete="off">
       </td>
     </tr>
     <tr>
       <td>Level</td>
       <td>
-        <input type="text" name="level" value="" size="20" autocomplete="off">
+        <input type="text" name="level" value="${user.level}" size="20" autocomplete="off">
       </td>
     </tr>
     <tr>

@@ -57,7 +57,11 @@ public class MvcController {
 
     @RequestMapping(value = "page1", method = RequestMethod.GET)
     public String renderingPage1(Model model) {
-        model.addAttribute("user", new User());
+        User user = new User();
+        user.setLogin("default");
+        user.setPassword("default");
+        user.setLevel(0);
+        model.addAttribute("user", user);
         return "user1";
     }
 
@@ -68,7 +72,8 @@ public class MvcController {
         model.addAttribute("password", user.getPassword());
         model.addAttribute("level", user.getLevel());
 
-        return "/result1";    }
+        return "/result1";
+    }
 
     @RequestMapping(value = "page2", method = RequestMethod.GET)
     public String renderingPage2() {

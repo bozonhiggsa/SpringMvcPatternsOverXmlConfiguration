@@ -12,7 +12,7 @@
 
     <context:component-scan base-package="com.application.springMvc.controller"/>
 
-    <mvc:annotation-driven/>
+    <!--<mvc:annotation-driven/>-->
 
     <bean name="resolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
