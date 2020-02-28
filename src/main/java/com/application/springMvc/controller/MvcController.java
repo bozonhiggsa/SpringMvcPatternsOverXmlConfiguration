@@ -156,7 +156,6 @@ public class MvcController {
 
     @RequestMapping(value = "/companyEmployee/{company}/employeeData/{employee}",
             method = RequestMethod.GET)
-    @ResponseBody
     public ResponseEntity<Map<String, String>> getEmployeeAndCompany(
             @MatrixVariable(pathVar = "company") Map<String, String> company,
             @MatrixVariable(pathVar = "employee") Map<String, String> employee) {
